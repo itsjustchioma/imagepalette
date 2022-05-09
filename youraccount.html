@@ -7,55 +7,25 @@
     <title>Your Account</title>
     <link rel="stylesheet" href="palette.css">
     <link rel="stylesheet" href="palette2.css">
-    <link rel="stylesheet" href="youraccount.css">
+    <!-- <link rel="stylesheet" href="youraccount.css"> -->
     <link rel="shortcut icon" type="image/png" href="./plogo.png">
 
         <style>
-        .container{
-            width: 700px;
-            height: 500px; 
-            background: #fff;
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-evenly;
-            padding: 0 15px;
+        p{
+            font-size: 20px;
         }
-        .intro-text p{
-            margin: 5px 0; 
-            font-size: 19px;
+        input{
+            line-height: 40px;
         }
-        .intro-text p a{
-            color: #121212;
+
+        .thing{
+            justify-content: center;
+            margin: auto;
+            width: 50%;
         }
-        form{
-            height: 330px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-evenly;
-        }
-        form input{
-            padding: 12px 7px;
-            outline: none; 
-            border: 1px solid #8c8f94; 
-        }
-        form input:focus{
-            border-color: #16056b;
-        }
-        .check-box{
-            display: flex;
-        }
-        .check-box label{
-            font-size: 10px; 
-            padding: 0 5px;
-        }
-        form button{
-            border: none; 
-            outline: none; 
-            padding: 11px 0; 
-            background: #191a1dec;
-            color: #fff;
-            font-size: 18px;
-            box-shadow: 0 7px 15px rgba(22, 5, 107, 0.3);
+
+        .submit{
+            padding:10px 25px 10px 25px;
         }
     </style>
     
@@ -87,26 +57,18 @@
     </div>
         
     <br>
-
-    <center>
-<!-- 
-        <div class="container">
-            <div class="intro-text">
-                <h2>Create Account</h2>
-                <p>Already have an account? <a href="loginpage.html">Login</a></p>
-            </div>
-    
-            <form action="">
-                <input type="text" name="fullname" placeholder="Full Name" required id="">
-                <input type="email" name="email" placeholder="Email" required id="">
-                <input type="password" name="password" placeholder="Password" required id="">
-                <div class="checkbox" >
-                    <input type="checkbox" name="" id="check">
-                    <label for="check">I have read and agreed to the <a href="#">Terms and Privacy</a></label>
-                </div>
-                <button type="submit" id="">Submit</button>
-            </form>
-        </div> -->
-    </center>
+    <div class="thing">
+        <form action="">
+            <b><p>Email</p></b>
+            <input type="email" placeholder="Enter your email address" style="width:100%">
+            <br> <br>
+            <b>
+                <p>Password</p>
+            </b>
+            <input type="password" placeholder="Enter your password" style="width:100%">
+            <br> <br> <br> <br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
 </body>
 </html>
